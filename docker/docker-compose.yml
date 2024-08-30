@@ -46,8 +46,6 @@ services:
 
   redis:
     image: redis:6.0
-    volumes:
-      - ./redis/redis_data:/data
     container_name: ${PROJECT_NAME}_redis
     command: redis-server --appendonly yes
 
